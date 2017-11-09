@@ -15,16 +15,9 @@ __error__(char *pcFilename, uint32_t ui32Line)
 //=============================================================================================//
 
 
-
-int  main(void) {
-	
+int  main(void) {	
 	setupHardware();
-	SysCtlDelay(SysCtlClockGet()/3);
-	
-	
-//	labFinal();
-	labFinalReceive();
- 	//transmitAndReceive();
+  transmitAndReceive();
 }	
 
 void transmitAndReceive() {
@@ -56,48 +49,9 @@ void transmitAndReceive() {
 		}
 	}	
 }
-void labFinalReceive(){
-	initReceiver();
-	while(1){
-	if(MsgData[1][0] >= 128)
-			GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0xF);
-		else 
-			GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0x0);
-		if(MsgData[1][1] >= 128)
-			GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0xF);
-		else 
-			GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0x0);
-		if(MsgData[1][2] >= 128)
-			GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_3, 0xF);
-		else 
-			GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_3, 0x0);		
-	}	
-}
-
-
-void labFinal(){
-	
-	uint8_t data[4];
-
-	while(1){	
-		data[0] = ADCReadChan()/8; 
-		data[1] = ADCReadChan2()/8;
-		data[2] = ADCReadChan3()/8;	
-		data[3] = 0;
-		
-		CAN_Transmit(data, 2);
-		
-		SysCtlDelay(SysCtlClockGet()/3);
-		
-		
-	}	
-}
-
-
 
 void setupHardware(){
 		ClockSetup();
-		
 		GPIO_Setup();
 		UartSetup();
 	  CAN_Init();
@@ -121,8 +75,3 @@ void displayData(){
 
 
 
-	// Enable the PWM0 peripheral
-
-	
-	// Check if the peripheral access is enabled.
-	
