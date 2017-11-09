@@ -65,12 +65,12 @@ void setupHardware(){
 
 void displayData(){
 		printf("MsgData[0] received message 1:\tByte 1: %d\tByte 2: %d\tByte 3: %d\t Byte 4: %d\n", MsgData[0][0], MsgData[0][1], MsgData[0][2], MsgData[0][3]);
-		printf("MsgData[1] received message 1:\tByte 1: %d\tByte 2: %d\tByte 3: %d\t Byte 4: %d\n", MsgData[1][0], MsgData[1][1], MsgData[1][2], MsgData[1][3]);
-		printf("MsgData[2] received message 1:\tByte 1: %d\tByte 2: %d\tByte 3: %d\t Byte 4: %d\n", MsgData[2][0], MsgData[2][1], MsgData[2][2], MsgData[2][3]);
-		printf("MsgData[3] received message 1:\tByte 1: %d\tByte 2: %d\tByte 3: %d\t Byte 4: %d\n", MsgData[3][0], MsgData[3][1], MsgData[3][2], MsgData[3][3]);	
-		printf("MsgData[4] received message 1:\tByte 1: %d\tByte 2: %d\tByte 3: %d\t Byte 4: %d\n", MsgData[4][0], MsgData[4][1], MsgData[4][2], MsgData[4][3]);
-		printf("MsgData[5] received message 1:\tByte 1: %d\tByte 2: %d\tByte 3: %d\t Byte 4: %d\n", MsgData[5][0], MsgData[5][1], MsgData[5][2], MsgData[5][3]);
-		printf("MsgData[6] received message 1:\tByte 1: %d\tByte 2: %d\tByte 3: %d\t Byte 4: %d\n", MsgData[6][0], MsgData[6][1], MsgData[6][2], MsgData[6][3]);
+		printf("MsgData[1] received message 2:\tByte 1: %d\tByte 2: %d\tByte 3: %d\t Byte 4: %d\n", MsgData[1][0], MsgData[1][1], MsgData[1][2], MsgData[1][3]);
+		printf("MsgData[2] received message 3:\tByte 1: %d\tByte 2: %d\tByte 3: %d\t Byte 4: %d\n", MsgData[2][0], MsgData[2][1], MsgData[2][2], MsgData[2][3]);
+		printf("MsgData[3] received message 4:\tByte 1: %d\tByte 2: %d\tByte 3: %d\t Byte 4: %d\n", MsgData[3][0], MsgData[3][1], MsgData[3][2], MsgData[3][3]);	
+		printf("MsgData[4] received message 5:\tByte 1: %d\tByte 2: %d\tByte 3: %d\t Byte 4: %d\n", MsgData[4][0], MsgData[4][1], MsgData[4][2], MsgData[4][3]);
+		printf("MsgData[5] received message 6:\tByte 1: %d\tByte 2: %d\tByte 3: %d\t Byte 4: %d\n", MsgData[5][0], MsgData[5][1], MsgData[5][2], MsgData[5][3]);
+		printf("MsgData[6] received message 7:\tByte 1: %d\tByte 2: %d\tByte 3: %d\t Byte 4: %d\n", MsgData[6][0], MsgData[6][1], MsgData[6][2], MsgData[6][3]);
 }
 
 
